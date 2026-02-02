@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_libft_utils2.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eliashobeika <eliashobeika@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/25 12:14:29 by ehobeika          #+#    #+#             */
-/*   Updated: 2025/12/29 16:16:56 by eliashobeik      ###   ########.fr       */
+/*   Created: 2025/12/29 23:16:57 by eliashobeik       #+#    #+#             */
+/*   Updated: 2025/12/29 23:21:09 by eliashobeik      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	ft_getdigit(int num)
 {

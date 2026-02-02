@@ -1,16 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_libft_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ehobeika <ehobeika@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eliashobeika <eliashobeika@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 19:18:53 by ehobeika          #+#    #+#             */
-/*   Updated: 2025/11/25 12:11:54 by ehobeika         ###   ########.fr       */
+/*   Created: 2025/12/29 22:40:49 by eliashobeik       #+#    #+#             */
+/*   Updated: 2025/12/29 23:19:07 by eliashobeik      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
+
+size_t	ft_strlen(const char *str)
+{
+	size_t	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
