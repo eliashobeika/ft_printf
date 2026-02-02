@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eliashobeika <eliashobeika@student.42.f    +#+  +:+       +#+        */
+/*   By: ehobeika <ehobeika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 13:56:23 by ehobeika          #+#    #+#             */
-/*   Updated: 2025/12/29 23:23:46 by eliashobeik      ###   ########.fr       */
+/*   Updated: 2026/02/02 10:56:56 by ehobeika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_process(va_list args, char identifier, int *i)
+static int	ft_process(va_list args, char identifier, int *i)
 {
 	int	temp;
 
@@ -35,6 +35,8 @@ int	ft_process(va_list args, char identifier, int *i)
 		temp = ft_process_char('%');
 	else if (identifier == 'u')
 		temp = ft_process_uint(va_arg(args, unsigned int));
+	else
+		temp = ft_process_char('%');
 	return (temp);
 }
 
